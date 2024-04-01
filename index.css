@@ -8,28 +8,69 @@ body {
     color: white;
     text-align: center;
     font-family: Rubik Scribble;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition-duration: 3s;
 }
 
 h1 {
     font-size: 3em;
 }
 
-button {
+.h1btndark {
     font-family: inherit;
     background-color: black;
     border: 2px white solid;
     width: 200px;
     height: 50px;
-    color: inherit;
+    color: white;
     border-radius: 10px;
     font-size: 20px;
     font-weight: bold;
     transition-duration: 0.3s;
 }
 
-button:hover {
+.h1btnlight {
+    font-family: inherit;
+    background-color: white;
+    border: 2px black solid;
+    width: 200px;
+    height: 50px;
+    color: black;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+.btn:hover {
     background-color: white;
     border: black;
     color: black;
     cursor: w-resize; /* AKA Botox - Kaleb */
+}
+
+#checkbox {
+    margin-top: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+#checkbox:focus {
+    outline: none;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+div {
+    display: flex;
+}
+
+div > p {
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 25px;
 }
