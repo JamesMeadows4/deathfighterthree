@@ -28,6 +28,7 @@ h1 {
     border-radius: 10px;
     font-size: 20px;
     font-weight: bold;
+    box-shadow: 0 0 5px 1px white;
     transition-duration: 0.3s;
 }
 
@@ -41,14 +42,22 @@ h1 {
     border-radius: 10px;
     font-size: 20px;
     font-weight: bold;
+    box-shadow: 0 0 5px 1px black;
     transition-duration: 0.3s;
 }
 
-.btn:hover {
+.h1btndark:hover {
     background-color: white;
     border: black;
     color: black;
-    cursor: w-resize; /* AKA Botox - Kaleb */
+    cursor: pointer;
+}
+
+.h1btnlight:hover {
+    background-color: black;
+    border: white;
+    color: white;
+    cursor: pointer;
 }
 
 #checkbox {
@@ -61,7 +70,7 @@ h1 {
     outline: none;
 }
 
-.btn:focus {
+button:focus {
     outline: none;
 }
 
