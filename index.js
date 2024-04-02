@@ -10,12 +10,13 @@ checkboxEl.addEventListener("change", changeMode)
 
 // Maim function
 function changeH1Text() {
-    const userInput = prompt("H1 Tag Name: ")
+    const userInput = prompt("Header content: ")
     if (userInput.trim()) {
         h1El.innerHTML = userInput
     }
 }
 
+// Changing the mode of the webpage
 function changeMode() {
     if (checkboxEl.checked) {
         // Switch to light mode
