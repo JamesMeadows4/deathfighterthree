@@ -20,15 +20,23 @@ function changeH1Text() {
 function changeMode() {
     if (checkboxEl.checked) {
         // Switch to light mode
-        changeh1TagBtnEl.classList = "h1btnlight btn"
-        document.body.style.backgroundColor = "white"
-        h1El.style.color = "black"
-        paragraphText.style.color = "black"
+        switchToLight()
     } else {
         // Switch to dark mode
-        changeh1TagBtnEl.classList = "h1btndark btn"
-        document.body.style.backgroundColor = "black"
-        h1El.style.color = "white"
-        paragraphText.style.color = "white"
+        switchToDark()
     }
+}
+
+function switchToDark() {
+    changeh1TagBtnEl.classList = "h1btndark btn"
+    document.body.style.backgroundColor = "black"
+    h1El.style.color = "white"
+    paragraphText.style.color = "white"
+}
+
+function switchToLight() {
+    changeh1TagBtnEl.classList = "h1btnlight btn"
+    document.body.style.backgroundColor = "white"
+    h1El.style.color = "black"
+    paragraphText.style.color = "black"
 }
